@@ -7,15 +7,15 @@ pipeline{
             }
 	}
 	stage('Second Stage') {
-		steps {
-			echo "Second stage"
-		}
+	    steps {
+	       	echo "Second stage"
+      	    }
 	}
-      stage('Third Stage') {
-	steps{
+        stage('Third Stage') {
+	    steps{
 		echo "Third stage"
-		}
-	}
+	    }
+       	}
 	
-	}
+    }
 }
