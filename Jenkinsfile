@@ -19,9 +19,9 @@ pipeline {
       	    }
 
 	}
-        stage('Third Stage') {
+        stage("Download Java Code") {
 	    steps{
-		echo "Third stage"
+		echo "git credentialsId: 'git-repo-credentials', url: 'git@github.com:Anoop-kathait07/java-springboot-sample-app.git'"
 	       }
          	}
 	
