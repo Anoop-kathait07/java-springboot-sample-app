@@ -10,7 +10,7 @@ pipeline {
 	    steps {
 		script{
 			def maven_exists = fileExists '/usr/share/maven'
-			if(maven_exists = true) {
+			if (maven_exists == true) {
 			echo "Skipping maven install - already exists"
 		}
 		else {
@@ -18,6 +18,7 @@ pipeline {
 		sh 'sudo apt install -y wget tree unzip openjdk-11-jdk maven'
       	    }
 
+	}
 	}
 }
         stage("Download Java Code") {
